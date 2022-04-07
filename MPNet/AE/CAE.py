@@ -57,7 +57,7 @@ def main(args):
 	optimizer = torch.optim.Adagrad(params)
 	total_loss=[]
 	for epoch in range(args.num_epochs):
-		print "epoch" + str(epoch)
+		print("epoch" + str(epoch))
 		avg_loss=0
 		for i in range(0, len(obs), args.batch_size):
 			decoder.zero_grad()
